@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
             Text('Selamat datang di Home Page!'),
             ElevatedButton(
               onPressed: () {
-                
+                Navigator.pushNamed(context, '/Order');
               }, 
               child: Text('Order Now')
             ),
