@@ -52,15 +52,15 @@ class _RegisterPageState extends State<RegisterPage> {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    
+                    if (_formKey.currentState!.validate()) {
+                      Navigator.pushReplacementNamed(context, '/Login');
+                    }
                   },
                   child: Text('Register'),
                 ),
               ),
               TextButton(
-                onPressed: () {
-                  
-                },
+                onPressed: () {},
                 child: Text('Sudah punya akun? Masuk'),
               ),
             ],
