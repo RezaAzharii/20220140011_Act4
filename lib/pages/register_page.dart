@@ -60,7 +60,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 ),
               ),
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                },
                 child: Text('Sudah punya akun? Masuk'),
               ),
             ],
