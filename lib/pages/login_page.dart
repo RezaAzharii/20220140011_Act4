@@ -52,15 +52,15 @@ class _LoginPageState extends State<LoginPage> {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    
+                    if (_formKey.currentState!.validate()) {
+                      Navigator.pushReplacementNamed(context, '/Home');
+                    }
                   },
                   child: Text('Login'),
                 ),
               ),
               TextButton(
-                onPressed: () {
-                  
-                },
+                onPressed: () {},
                 child: Text('Belum punya akun? Daftar'),
               ),
             ],
