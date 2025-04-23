@@ -15,6 +15,13 @@ class _OrderPageState extends State<OrderPage> {
   int totalHarga = 0;
   final _formKey = GlobalKey<FormState>();
 
+  void calculateTotalPrice() {
+    setState(() {
+      totalHarga = (jumlahMakanan * 32000) + (jumlahMinuman * 5000);
+    });
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return const Placeholder();
